@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <link rel="icon" href="./favicon.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="./js/scripts.min.js"></script>
+    <title>О нас</title>
+  </head>
+  <body>
+    <div class="topMenu undefined">
+      <div class="topMenu__container">
+        <div class="topMenu__leftSide">
+          <div class="topMenu__logo"></div>
+        </div>
+        <div class="topMenu__main">
+          <div class="topMenu__lang">
+            <ul class="topMenu__langList">
+              <li class="topMenu__langItem topMenu__langItem--current"><span class="topMenu__langLink">Ру</span></li>
+              <li class="topMenu__langItem"><a class="topMenu__langLink" href="#">En</a></li>
+            </ul>
+          </div>
+          <nav class="topMenu__nav">
+            <ul class="topMenu__navList">
+              <li class="topMenu__navItem"><a class="topMenu__navLink" href="index.html" title="Главная">Главная</a></li>
+              <li class="topMenu__navItem"><a class="topMenu__navLink" href="about-us.html" title="О нас">О нас</a></li>
+              <li class="topMenu__navDropdown" onclick="topMenuDropdownToggle(this)"><span class="topMenu__navDropdownText" title="Услуги"><span>Услуги</span>
+                  <svg class="icon button__icon topMenu__navDropdownIcon">
+                    <use xlink:href="icons.svg#alt-arrow-down"></use>
+                  </svg></span>
+                <ul class="topMenu__dropdownList">
+                  <li class="topMenu__navItem"><a class="topMenu__navLink" href="service-3d-animation.html" title="3D-анимация">3D-анимация</a></li>
+                  <li class="topMenu__navItem"><a class="topMenu__navLink" href="service-2d-animation.html" title="2D-анимация">2D-анимация</a></li>
+                  <li class="topMenu__navItem"><a class="topMenu__navLink" href="service-video.html" title="Видеосъёмка">Видеосъёмка</a></li>
+                  <li class="topMenu__navItem"><a class="topMenu__navLink" href="service-3d-modeling.html" title="3D-моделирование">3D-моделирование</a></li>
+                </ul>
+              </li>
+              <li class="topMenu__navDropdown" onclick="topMenuDropdownToggle(this)"><span class="topMenu__navDropdownText" title="Портфолио"><span>Портфолио</span>
+                  <svg class="icon button__icon topMenu__navDropdownIcon">
+                    <use xlink:href="icons.svg#alt-arrow-down"></use>
+                  </svg></span>
+                <ul class="topMenu__dropdownList">
+                  <li class="topMenu__navItem"><a class="topMenu__navLink" href="portfolio.html" title="3D-анимация">3D-анимация</a></li>
+                  <li class="topMenu__navItem"><a class="topMenu__navLink" href="portfolio.html" title="2D-анимация">2D-анимация</a></li>
+                  <li class="topMenu__navItem"><a class="topMenu__navLink" href="portfolio.html" title="Видеосъёмка">Видеосъёмка</a></li>
+                  <li class="topMenu__navItem"><a class="topMenu__navLink" href="portfolio.html" title="3D-моделирование">3D-моделирование</a></li>
+                </ul>
+              </li>
+              <li class="topMenu__navItem"><a class="topMenu__navLink" href="contacts.html" title="Контакты">Контакты</a></li>
+              <li class="topMenu__navItem"><a class="topMenu__navLink" href="order.html" title="Заказать">Заказать</a></li>
+            </ul>
+          </nav>
+          <div class="topMenu__contacts"><a class="topMenu__phone" href="+998909097001">+998 90 909 70 01</a>
+            <div class="topMenu__socialMediaList">
+              <li class="topMenu__socialMediaItem"><a class="topMenu__socialMediaLink" href="#" title="Telegram">
+                  <svg class="icon topMenu__socialMediaIcon">
+                    <use xlink:href="icons.svg#telegram"></use>
+                  </svg></a></li>
+              <li class="topMenu__socialMediaItem"><a class="topMenu__socialMediaLink" href="#" title="Telegram">
+                  <svg class="icon topMenu__socialMediaIcon">
+                    <use xlink:href="icons.svg#whatsapp--outline"></use>
+                  </svg></a></li>
+            </div>
+          </div>
+        </div>
+        <div class="topMenu__rightSide">
+          <button class="topMenu__toggle" onclick="topMenuToggle()">
+            <svg class="icon topMenu__toggleIcon" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <path class="topMenu__toggleIconLine" stroke="currentcolor" stroke-width="2" d="M4 22h24"></path>
+              <path class="topMenu__toggleIconLine" stroke="currentcolor" stroke-width="2" d="M4 16h24"></path>
+              <path class="topMenu__toggleIconLine" stroke="currentcolor" stroke-width="2" d="M4 10h24"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <video class="topMenu__background" src="./video/topMenu-background.mp4" muted="muted" autoplay="autoplay" loop="loop"></video>
+    </div>
+    <main class="aboutUsPage">
+      <div class="aboutUsPage__header">
+        <div class="aboutUsPage__headerContainer">
+          <h1 class="aboutUsPage__headerTitle">О нас</h1>
+          <p class="aboutUsPage__headerText">MD Video — это компания, которая специализируется на создании 3D графики, анимации и видеороликов. Мы используем самые современные технологии и оборудование для создания уникальных и высококачественных продуктов. Наша команда профессионалов имеет большой опыт работы в данной области и готова воплотить в жизнь любую вашу идею.</p>
+        </div>
+        <div class="aboutUsPage__picture"></div>
+      </div>
+      <div class="aboutUsPage__sloganBlock">
+        <div class="slogan">
+          <div class="slogan__container">
+            <div class="slogan__item">
+              <svg class="slogan__icon icon">
+                <use xlink:href="icons.svg#like--duotone"></use>
+              </svg>
+              <h2 class="slogan__itemTitle">Качество</h2>
+              <p class="slogan__itemText">Сложно сказать, почему независимые государства, вне зависимости от их уровня, должны быть обнародованы.</p>
+            </div>
+            <div class="slogan__item">
+              <svg class="slogan__icon icon">
+                <use xlink:href="icons.svg#medal-ribbon-star--duotone"></use>
+              </svg>
+              <h2 class="slogan__itemTitle">Надёжность</h2>
+              <p class="slogan__itemText">Сложно сказать, почему независимые государства, вне зависимости от их уровня, должны быть обнародованы.</p>
+            </div>
+            <div class="slogan__item">
+              <svg class="slogan__icon icon">
+                <use xlink:href="icons.svg#chart-2--duotone"></use>
+              </svg>
+              <h2 class="slogan__itemTitle">Результат</h2>
+              <p class="slogan__itemText">Сложно сказать, почему независимые государства, вне зависимости от их уровня, должны быть обнародованы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="partners" id="partners">
+        <div class="partners__container">
+          <h2 class="partners__title">Партнёры</h2>
+        </div>
+        <div class="partners__wrapper">
+          <div class="partners__row partners__row--1">
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/asia-pack.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/dd-garant.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/makeup-shop.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/fadolli-ricci.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/uzdigital-tv.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/asia-pack.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/dd-garant.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/makeup-shop.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/fadolli-ricci.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/uzdigital-tv.webp"/>
+            </div>
+          </div>
+          <div class="partners__row partners__row--2">
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/asia-pack.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/dd-garant.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/makeup-shop.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/fadolli-ricci.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/uzdigital-tv.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/asia-pack.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/dd-garant.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/makeup-shop.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/fadolli-ricci.webp"/>
+            </div>
+            <div class="partners__item">
+              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/uzdigital-tv.webp"/>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__mainBlock">
+        <div class="footer__container">
+          <div class="footer__block footer__block--widthRestriction">
+            <h4 class="footer__blockTitle">Кто мы?</h4>
+            <p class="footer__blockText">Мы — компания MD Video, специализирующаяся на создании анимации и 3D моделирования для самых требовательных клиентов. Мы готовы помочь вам создать идеальный видеоролик, который станет настоящим произведением искусства.</p>
+          </div>
+          <div class="footer__block">
+            <h4 class="footer__blockTitle">Чем мы занимаемся?</h4>
+            <ul class="footer__list">
+              <li class="footer__listItem"><a class="footer__link" href="#" title="3D-анимация">3D-анимация</a></li>
+              <li class="footer__listItem"><a class="footer__link" href="#" title="2D-анимация">2D-анимация</a></li>
+              <li class="footer__listItem"><a class="footer__link" href="#" title="3D-моделирование">3D-моделирование</a></li>
+              <li class="footer__listItem"><a class="footer__link" href="#" title="Создание видеороликов">Создание видеороликов</a></li>
+            </ul>
+          </div>
+          <address class="footer__block">
+            <h4 class="footer__blockTitle">Контакты</h4>
+            <ul class="footer__list">
+              <li class="footer__listItem"><a class="footer__link" href="mailto: info@md.uz" title="E-mail">info@md.uz</a></li>
+              <li class="footer__listItem"><a class="footer__link" href="tel: +998909097001" title="Телефон">+998 90 909 70 01</a></li>
+              <li class="footer__listItem">г. Ташкент, пр. Амира Темура, <br> 106100200</li>
+            </ul><a class="button button--text footer__contactsButton" href="contacts.html"><span>Контакты</span>
+              <svg class="icon button__icon">
+                <use xlink:href="icons.svg#alt-arrow-right--outline"></use>
+              </svg></a>
+          </address>
+          <div class="footer__block footer__block--align--right">
+            <ul class="footer__socialMediaList">
+              <li class="footer__socialMediaItem"><a class="footer__socialMediaLink" href="#" title="Facebook" target="_blank">
+                  <svg class="icon footer__socialMediaIcon">
+                    <use xlink:href="icons.svg#facebook-square"></use>
+                  </svg></a></li>
+              <li class="footer__socialMediaItem"><a class="footer__socialMediaLink" href="#" title="Instagram" target="_blank">
+                  <svg class="icon footer__socialMediaIcon">
+                    <use xlink:href="icons.svg#instagram--outline"></use>
+                  </svg></a></li>
+              <li class="footer__socialMediaItem"><a class="footer__socialMediaLink" href="#" title="Telegram" target="_blank">
+                  <svg class="icon footer__socialMediaIcon">
+                    <use xlink:href="icons.svg#telegram"></use>
+                  </svg></a></li>
+            </ul>
+            <ul class="footer__extraLinksList">
+              <li class="footer__extraLinksItem"><a class="footer__extraLink" href="#" title="Карта сайта">Карта сайта</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyrights">
+        <p class="footer__copyrightsText">MD.uz © 2015 — 2023</p>
+      </div>
+    </footer>
+    <script>AOS.init();</script>
+  </body>
+</html>
