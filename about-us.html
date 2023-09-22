@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/tiny-slider.css"/>
     <script src="./js/scripts.min.js"></script>
     <title>О нас</title>
   </head>
@@ -120,70 +121,55 @@
           <h2 class="partners__title">Партнёры</h2>
         </div>
         <div class="partners__wrapper">
-          <div class="partners__row partners__row--1">
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/asia-pack.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/dd-garant.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/makeup-shop.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/fadolli-ricci.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/uzdigital-tv.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/asia-pack.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/dd-garant.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/makeup-shop.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/fadolli-ricci.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/uzdigital-tv.webp"/>
-            </div>
-          </div>
-          <div class="partners__row partners__row--2">
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/asia-pack.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/dd-garant.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/makeup-shop.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/fadolli-ricci.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/uzdigital-tv.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/asia-pack.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/dd-garant.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/makeup-shop.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/fadolli-ricci.webp"/>
-            </div>
-            <div class="partners__item">
-              <div class="partners__overlay"></div><img class="partners__logo" src="./content-media/partners/uzdigital-tv.webp"/>
-            </div>
-          </div>
+          <ul class="partners__carousel">
+            <li class="partners__carouselItem">
+              <div class="partners__item"><img class="partners__logo" src="./content-media/partners/asia-pack.webp"/></div>
+            </li>
+            <li class="partners__carouselItem">
+              <div class="partners__item"><img class="partners__logo" src="./content-media/partners/dd-garant.webp"/></div>
+            </li>
+            <li class="partners__carouselItem">
+              <div class="partners__item"><img class="partners__logo" src="./content-media/partners/makeup-shop.webp"/></div>
+            </li>
+            <li class="partners__carouselItem">
+              <div class="partners__item"><img class="partners__logo" src="./content-media/partners/fadolli-ricci.webp"/></div>
+            </li>
+            <li class="partners__carouselItem">
+              <div class="partners__item"><img class="partners__logo" src="./content-media/partners/uzdigital-tv.webp"/></div>
+            </li>
+            <li class="partners__carouselItem">
+              <div class="partners__item"><img class="partners__logo" src="./content-media/partners/asia-pack.webp"/></div>
+            </li>
+            <li class="partners__carouselItem">
+              <div class="partners__item"><img class="partners__logo" src="./content-media/partners/dd-garant.webp"/></div>
+            </li>
+            <li class="partners__carouselItem">
+              <div class="partners__item"><img class="partners__logo" src="./content-media/partners/makeup-shop.webp"/></div>
+            </li>
+            <li class="partners__carouselItem">
+              <div class="partners__item"><img class="partners__logo" src="./content-media/partners/fadolli-ricci.webp"/></div>
+            </li>
+            <li class="partners__carouselItem">
+              <div class="partners__item"><img class="partners__logo" src="./content-media/partners/uzdigital-tv.webp"/></div>
+            </li>
+          </ul>
+          <script>
+            let carousel = tns({
+              container: '.partners__carousel',
+              items: 10,
+              gutter: 8,
+              slideBy: 1,
+              autoWidth: true,
+              autoplay: true,
+              speed: 1000,
+              autoplayTimeout: 2000,
+              mouseDrag: true,
+              touch: true,
+              nav: false,
+              controls: false,
+              autoplayButtonOutput: false,
+            })
+          </script>
         </div>
       </section>
     </main>
